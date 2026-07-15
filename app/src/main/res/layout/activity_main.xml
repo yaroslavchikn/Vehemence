@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="#0d1117">
+
+    <!-- Заголовок -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔥 DPI Bypass"
+        android:textSize="32sp"
+        android:textColor="#58a6ff"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Обход блокировок YouTube"
+        android:textSize="14sp"
+        android:textColor="#8b949e"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Статус -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Статус:"
+        android:textColor="#8b949e"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔴 Остановлен"
+        android:textSize="24sp"
+        android:textColor="#f85149"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Кнопки -->
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="🚀 Запустить обход"
+        android:backgroundTint="#238636"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="⛔ Остановить"
+        android:backgroundTint="#da3633"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Настройки -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚙️ Настройки обхода"
+        android:textColor="#58a6ff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/fragmentSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Фрагментация TLS"
+        android:textColor="#e6edf3"
+        android:thumbTextPadding="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/sniSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Обфускация SNI"
+        android:textColor="#e6edf3"
+        android:layout_marginBottom="8dp"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/httpSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Модификация HTTP"
+        android:textColor="#e6edf3"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📌 YouTube: youtube.com, googlevideo.com, ytimg.com"
+        android:textColor="#8b949e"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
